@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards - Matthew Woods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333333;
+        }
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+        .card {
+            flex: 1;
+            border: 1px solid #cccccc;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Three Cards In A Row</h1>
+
+    <p>Everything I've built so far stacks downwards. These sit
+    side by side.</p>
+
+    <div class="row">
+
+        <div class="card">
+            <h2>HTML</h2>
+            <p>Started 18 September. Eight pages so far, all typed
+            by hand rather than copied.</p>
+        </div>
+
+        <div class="card">
+            <h2>CSS</h2>
+            <p>Started 23 September. Internal styles first, then an
+            external stylesheet.</p>
+        </div>
+
+        <div class="card">
+            <h2>Python</h2>
+            <p>Started August, before the course. DataCamp and
+            Codecademy, in a separate repository.</p>
+        </div>
+
+    </div>
+
+    <p>The row is a flex container. The three cards are its
+    children, and flex: 1 tells each one to take an equal share
+    of the width.</p>
+
+</body>
+</html>
