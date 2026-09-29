@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form - Matthew Woods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333333;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #cccccc;
+            font-family: inherit;
+            font-size: 1em;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1a4d7a;
+            color: white;
+            border: none;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #16405f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Get In Touch</h1>
+
+    <p>A form that looks right but doesn't send anywhere yet.
+    Sending needs JavaScript or a server.</p>
+
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5"></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+
+</body>
+</html>
