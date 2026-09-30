@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First JavaScript - Matthew Woods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333333;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #1a4d7a;
+            color: white;
+            border: none;
+            font-size: 1em;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f4f8;
+            border-left: 4px solid #1a4d7a;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My First JavaScript</h1>
+
+    <p>HTML is the structure. CSS is the appearance. JavaScript
+    is the behaviour.</p>
+
+    <button id="myButton">Click me</button>
+
+    <p id="output">Nothing has happened yet.</p>
+
+    <script>
+        const button = document.getElementById("myButton");
+        const output = document.getElementById("output");
+        let count = 0;
+
+        button.addEventListener("click", function() {
+            count = count + 1;
+            output.textContent = "You clicked " + count + " times.";
+        });
+    </script>
+
+</body>
+</html>
