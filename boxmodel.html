@@ -1,0 +1,63 @@
+<!-- CSS Box Model Practice -->
+<!-- Matthew Woods - practice file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 20px;
+    }
+
+    #main-title {
+      color: #2c3e50;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .box {
+      background-color: white;
+      width: 300px;
+      padding: 20px;
+      border: 3px solid #2c3e50;
+      margin: 20px auto;
+    }
+
+    .highlight {
+      background-color: #f1c40f;
+    }
+
+    .button {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-title">The CSS Box Model</h1>
+
+  <div class="box">
+    <p>This box has padding inside the border and margin outside it.</p>
+  </div>
+
+  <div class="box highlight">
+    <p>This box uses two classes: box and highlight.</p>
+  </div>
+
+  <div class="box">
+    <a href="home.html" class="button">Hover over me</a>
+  </div>
+
+</body>
+</html>
